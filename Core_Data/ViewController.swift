@@ -19,16 +19,11 @@ class ViewController: UITableViewController {
         super.viewDidLoad()
         container = NSPersistentContainer(name: "CoreDataModel")
         container.loadPersistentStores { storeDescription, error in
+            self.container.viewContext.mergePolicy = NSMergeByPropertyObjectTrumpMergePolicy
             if let error = error {
                 print("Unresolved error \(error)")
             }
         }
-        //
-        //        let commit = Commit()
-        //        commit.message = "Woo"
-        //        commit.url = "http://www.example.com"
-        //        commit.data = Date()
-        
         performSelector(inBackground: #selector(fetchCommits), with: nil)
         loadSavedData()
     }
@@ -63,7 +58,7 @@ class ViewController: UITableViewController {
                     self.configure(commit: commit, usingJson: jsonCommit)
                 }
                 self.saveContext()
-              
+                loadSavedData()
             }
         }
     }
@@ -85,7 +80,7 @@ class ViewController: UITableViewController {
                 print("An error occurred while saving: \(error)")
             }
         }
-        self.fetchCommits()
+       // self.fetchCommits()
     }
 
     
@@ -93,11 +88,13 @@ class ViewController: UITableViewController {
         return 1
     }
     
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView,
+                            numberOfRowsInSection section: Int) -> Int {
         return commits.count
     }
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView,
+                            cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Commit", for: indexPath)
         
         let commit = commits[indexPath.row]

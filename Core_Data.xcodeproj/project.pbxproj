@@ -16,8 +16,10 @@
 		AB48E3142B0E38EF00D98091 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB48E3122B0E38EF00D98091 /* LaunchScreen.storyboard */; };
 		AB48E31C2B0E5A4900D98091 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB48E31B2B0E5A4900D98091 /* DetailViewController.swift */; };
 		AB48E3262B0E641B00D98091 /* CoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AB48E3242B0E641B00D98091 /* CoreDataModel.xcdatamodeld */; };
-		AB48E3292B10DCC600D98091 /* Commit+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB48E3272B10DCC600D98091 /* Commit+CoreDataClass.swift */; };
-		AB48E32A2B10DCC600D98091 /* Commit+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB48E3282B10DCC600D98091 /* Commit+CoreDataProperties.swift */; };
+		AB48E33F2B274F1600D98091 /* Author+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB48E33B2B274F1600D98091 /* Author+CoreDataClass.swift */; };
+		AB48E3402B274F1600D98091 /* Author+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB48E33C2B274F1600D98091 /* Author+CoreDataProperties.swift */; };
+		AB48E3412B274F1600D98091 /* Commit+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB48E33D2B274F1600D98091 /* Commit+CoreDataClass.swift */; };
+		AB48E3422B274F1600D98091 /* Commit+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB48E33E2B274F1600D98091 /* Commit+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,8 +35,10 @@
 		AB48E3152B0E38EF00D98091 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB48E31B2B0E5A4900D98091 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		AB48E3252B0E641B00D98091 /* CoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataModel.xcdatamodel; sourceTree = "<group>"; };
-		AB48E3272B10DCC600D98091 /* Commit+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Commit+CoreDataClass.swift"; sourceTree = "<group>"; };
-		AB48E3282B10DCC600D98091 /* Commit+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Commit+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		AB48E33B2B274F1600D98091 /* Author+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Author+CoreDataClass.swift"; sourceTree = "<group>"; };
+		AB48E33C2B274F1600D98091 /* Author+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Author+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		AB48E33D2B274F1600D98091 /* Commit+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Commit+CoreDataClass.swift"; sourceTree = "<group>"; };
+		AB48E33E2B274F1600D98091 /* Commit+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Commit+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		EA1B2CB679C71DCDB826743F /* Pods-Core_Data.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Core_Data.debug.xcconfig"; path = "Target Support Files/Pods-Core_Data/Pods-Core_Data.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,8 +100,10 @@
 		AB48E31D2B0E61E600D98091 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				AB48E3272B10DCC600D98091 /* Commit+CoreDataClass.swift */,
-				AB48E3282B10DCC600D98091 /* Commit+CoreDataProperties.swift */,
+				AB48E33B2B274F1600D98091 /* Author+CoreDataClass.swift */,
+				AB48E33C2B274F1600D98091 /* Author+CoreDataProperties.swift */,
+				AB48E33D2B274F1600D98091 /* Commit+CoreDataClass.swift */,
+				AB48E33E2B274F1600D98091 /* Commit+CoreDataProperties.swift */,
 				AB48E3242B0E641B00D98091 /* CoreDataModel.xcdatamodeld */,
 			);
 			path = Data;
@@ -226,9 +232,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB48E3292B10DCC600D98091 /* Commit+CoreDataClass.swift in Sources */,
+				AB48E3402B274F1600D98091 /* Author+CoreDataProperties.swift in Sources */,
+				AB48E3422B274F1600D98091 /* Commit+CoreDataProperties.swift in Sources */,
+				AB48E33F2B274F1600D98091 /* Author+CoreDataClass.swift in Sources */,
+				AB48E3412B274F1600D98091 /* Commit+CoreDataClass.swift in Sources */,
 				AB48E30C2B0E38EE00D98091 /* ViewController.swift in Sources */,
-				AB48E32A2B10DCC600D98091 /* Commit+CoreDataProperties.swift in Sources */,
 				AB48E3082B0E38EE00D98091 /* AppDelegate.swift in Sources */,
 				AB48E30A2B0E38EE00D98091 /* SceneDelegate.swift in Sources */,
 				AB48E31C2B0E5A4900D98091 /* DetailViewController.swift in Sources */,

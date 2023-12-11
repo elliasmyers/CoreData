@@ -1,8 +1,8 @@
 //
 //  Commit+CoreDataProperties.swift
-//  
+//  Core_Data
 //
-//  Created by Raiden Yamato on 24.11.2023.
+//  Created by Raiden Yamato on 11.12.2023.
 //
 //
 
@@ -12,8 +12,7 @@ import CoreData
 
 extension Commit {
 
-    @nonobjc public class func createFetchRequest()
-                                    -> NSFetchRequest<Commit> {
+    @nonobjc public class func createFetchRequest() -> NSFetchRequest<Commit> {
         return NSFetchRequest<Commit>(entityName: "Commit")
     }
 
@@ -21,5 +20,10 @@ extension Commit {
     @NSManaged public var message: String
     @NSManaged public var sha: String
     @NSManaged public var url: String
+    @NSManaged public var author: Author
+
+}
+
+extension Commit : Identifiable {
 
 }
